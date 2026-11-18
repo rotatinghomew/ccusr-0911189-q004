@@ -1,0 +1,109 @@
+{
+  "breaks": [
+    {
+      "id": "B1",
+      "donor": "D1",
+      "start": 12,
+      "end": 14,
+      "replay_of": null
+    },
+    {
+      "id": "B2",
+      "donor": "D2",
+      "start": 15,
+      "end": 17,
+      "replay_of": null
+    }
+  ],
+  "logs": [
+    {
+      "station": "FM",
+      "region": "east",
+      "start": 10,
+      "end": 13,
+      "state": "muted"
+    },
+    {
+      "station": "FM",
+      "region": "east",
+      "start": 13,
+      "end": 18,
+      "state": "broadcast"
+    },
+    {
+      "station": "web",
+      "region": "east",
+      "start": 12,
+      "end": 14,
+      "state": "unknown"
+    },
+    {
+      "station": "web",
+      "region": "east",
+      "start": 15,
+      "end": 17,
+      "state": "broadcast"
+    }
+  ],
+  "contracts": [
+    {
+      "donor": "D1",
+      "regions": [
+        "east"
+      ],
+      "windows": [
+        [
+          10,
+          40
+        ]
+      ],
+      "target": 2,
+      "replay": true
+    },
+    {
+      "donor": "D2",
+      "regions": [
+        "east"
+      ],
+      "windows": [
+        [
+          10,
+          40
+        ]
+      ],
+      "target": 2,
+      "replay": true
+    }
+  ],
+  "slots": [
+    {
+      "id": "late",
+      "start": 24,
+      "end": 26,
+      "region": "east",
+      "capacity": 1,
+      "donors": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "id": "night",
+      "start": 30,
+      "end": 34,
+      "region": "east",
+      "capacity": 2,
+      "donors": [
+        "D1",
+        "D2"
+      ]
+    }
+  ],
+  "booking": [
+    {
+      "slot": "night",
+      "donor": "D2",
+      "state": "notified"
+    }
+  ]
+}
